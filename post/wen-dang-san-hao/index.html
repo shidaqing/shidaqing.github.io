@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" >
 
-<title>标签列表 | Gridea</title>
+<title>文档三号 | Gridea</title>
 <meta name="description" content="温故而知新">
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
@@ -12,6 +12,12 @@
 <link rel="shortcut icon" href="https://shidaqing.github.io/favicon.ico?v=1559139840588">
 <link rel="stylesheet" href="https://shidaqing.github.io/styles/main.css">
 
+
+  
+    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css" />
+  
+
+  
 
 
 <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
@@ -90,14 +96,45 @@
 
       <div class="main-container">
         <div class="content-container" data-aos="fade-up">
-          <h2 class="tag-list-title">标签列表</h2>
-          <div class="tags-container">
+          <div class="post-detail">
+            <h2 class="post-title">文档三号</h2>
+            <div class="post-date">2019-05-29</div>
             
-              <a class="tag" href="https://shidaqing.github.io/tag/uHCmsb25w">开发化境与工具</a>
+            <div class="post-content">
+              <p>文档三号</p>
+<p>文档三号</p>
+
+            </div>
             
-              <a class="tag" href="https://shidaqing.github.io/tag/gridea">Gridea</a>
+              <div class="tag-container">
+                
+                  <a href="https://shidaqing.github.io/tag/uHCmsb25w" class="tag">
+                    开发化境与工具
+                  </a>
+                
+              </div>
             
+            
+              <div class="next-post">
+                <div class="next">下一篇</div>
+                <a href="https://shidaqing.github.io/post/he-li-lo">
+                  <h3 class="post-title">
+                    合理lo
+                  </h3>
+                </a>
+              </div>
+            
+
+            
+              
+                <div id="gitalk-container" data-aos="fade-in"></div>
+              
+
+              
+            
+
           </div>
+
         </div>
       </div>
     </div>
@@ -118,6 +155,29 @@ var app = new Vue({
 })
 
 </script>
+
+
+  
+  
+    <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+    <script>
+
+      var gitalk = new Gitalk({
+        clientID: '',
+        clientSecret: '',
+        repo: '',
+        owner: '',
+        admin: [''],
+        id: location.pathname,      // Ensure uniqueness and length less than 50
+        distractionFreeMode: false  // Facebook-like distraction free mode
+      })
+
+      gitalk.render('gitalk-container')
+
+    </script>
+  
+
+  
 
 
 
